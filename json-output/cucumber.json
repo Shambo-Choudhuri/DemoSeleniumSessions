@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#Without Examples Keyword Approach"
+          }
+        ],
+        "line": 6,
+        "name": "HubSpot Login Test Scenario",
+        "description": "",
+        "id": "hubspot-login-feature;hubspot-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13127190700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is currently present on the Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_currently_present_on_the_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108909100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Title of Login Page is HubSpot Login",
+            "match": {
+              "location": "LoginStepDefinition.title_of_Login_page_is_HubSpot_Login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43400,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#Then User enters \"shambo.choudhuri9@gmail.com\" and \"pHc#m8m6\""
+              }
+            ],
+            "line": 14,
+            "name": "User enters username and password",
+            "match": {
+              "location": "LoginStepDefinition.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User lands on Home Page",
+            "match": {
+              "location": "LoginStepDefinition.user_lands_on_Home_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "HubSpot Login Feature",
+    "description": "",
+    "id": "hubspot-login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/user/Documents/EclipseProjects/DemoSeleniumSessions/src/main/java/com/qa/hubspot/FeatureFiles_BDD/login.feature"
+  }
+]

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Demo Smoke Suite" duration-ms="18423" started-at="2020-10-13T00:39:49 IST" finished-at="2020-10-13T00:40:07 IST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="18423" started-at="2020-10-13T00:39:49 IST" finished-at="2020-10-13T00:40:07 IST">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@682c1e93]" name="setUp" is-config="true" duration-ms="8522" started-at="2020-10-13T00:39:49 IST" finished-at="2020-10-13T00:39:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://app.hubspot.com/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@682c1e93]" name="verifyLoginPageTitle" duration-ms="8998" started-at="2020-10-13T00:39:57 IST" finished-at="2020-10-13T00:40:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@682c1e93]" name="tearDown" is-config="true" duration-ms="601" started-at="2020-10-13T00:40:07 IST" finished-at="2020-10-13T00:40:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Demo Smoke Suite -->
+</testng-results>

@@ -1,0 +1,72 @@
+pipeline {
+  agent any
+  stages {
+    
+
+    stage('Build QA') {
+      parallel {
+        stage('Build QA') {
+          steps {
+            sh 'mvn clean install -DskipTests=true'
+          }
+        }
+
+        stage('chrome') {
+          steps {
+            sh 'mvn test -Denv=QA -Dbrowser=chrome'
+          }
+        }
+
+        stage('firefox') {
+          steps {
+            sh 'mvn test -Denv=QA -Dbrowser=firefox'
+          }
+        }
+
+      }
+    }
+
+    stage('Build UAT') {
+      parallel {
+        stage('Build UAT') {
+          steps {
+            sh 'mvn clean install -DskipTests=true'
+          }
+        }
+
+        stage('firefox') {
+          steps {
+            sh 'mvn test -Denv=qa -Dbrowser=firefox'
+          }
+        }
+
+        stage('chrome') {
+          steps {
+            sh 'mvn test -Denv=qa -Dbrowser=chrome'
+          }
+        }
+
+       
+
+      }
+    }
+
+    
+    stage('Publish reports') {
+           steps {
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: '/allure-results']]
+                    ])
+                }
+            }
+        }
+    
+    
+
+  }
+  
